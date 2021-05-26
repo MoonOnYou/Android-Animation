@@ -134,6 +134,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/outline_shadow"
             android:orientation="vertical"
             android:layout_margin="4dp">
 
