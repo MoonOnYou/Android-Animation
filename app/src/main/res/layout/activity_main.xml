@@ -15,14 +15,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="첫번째 애니매이션\n( android:animateLayoutChanges=true)"
+            android:text="첫번째 애니매이션\n( android:animateLayoutChanges=true)\nMaterialCardView 의 Shadow "
             android:layout_margin="16dp"
             android:textSize="18dp"/>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="#0fff0000"
+            app:strokeWidth="1dp"
+            android:outlineSpotShadowColor="#ff0000"
             android:animateLayoutChanges="true"
             android:layout_margin="4dp">
 
@@ -30,7 +35,6 @@
                 android:id="@+id/layoutFirst"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_200"
                 android:padding="16dp">
 
                 <ImageView
@@ -65,7 +69,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/purple_200"
                     android:padding="16dp">
 
                     <ImageView
@@ -84,7 +87,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/purple_200"
                     android:padding="16dp">
 
                     <ImageView
@@ -103,7 +105,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/purple_200"
                     android:padding="16dp">
 
                     <ImageView
@@ -121,13 +122,13 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
 <!--2-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="두 번째 애니매이션\n( ViewExtenstion )"
+            android:text="두 번째 애니매이션\n( ViewExtenstion )\nDrawable 의 Shadow"
             android:layout_margin="16dp"
             android:textSize="18dp"/>
 
